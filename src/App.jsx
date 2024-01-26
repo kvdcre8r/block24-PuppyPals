@@ -14,10 +14,10 @@ function App() {
   }
   return (
     <div className='App'>
-      {
-        puppies.map((puppy) => {
-          return <p onClick={() => handleClick(puppy)} key={puppy.id}>{puppy.name}</p>
-        })
+      <h1>Puppy Pals</h1>
+      {puppies.map((puppy) => {
+        return <p onClick={() => handleClick(puppy)} key={puppy.id}>{puppy.name}</p>
+      })
       }
       {featPupId && <div>
         <h2>{featuredPup.name}</h2>
